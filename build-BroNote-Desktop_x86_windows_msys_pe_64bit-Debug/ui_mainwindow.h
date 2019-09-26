@@ -10,11 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -27,9 +26,9 @@ public:
     QWidget *centralwidget;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
-    QMenuBar *menubar;
-    QMenu *menuHello_World;
+    QPlainTextEdit *plainTextEdit;
     QStatusBar *statusbar;
+    QMenuBar *menuBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -40,22 +39,23 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(80, 30, 160, 80));
+        verticalLayoutWidget->setGeometry(QRect(0, 0, 160, 80));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
+        plainTextEdit = new QPlainTextEdit(verticalLayoutWidget);
+        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
+
+        verticalLayout->addWidget(plainTextEdit);
+
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 17));
-        menuHello_World = new QMenu(menubar);
-        menuHello_World->setObjectName(QString::fromUtf8("menuHello_World"));
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
-
-        menubar->addAction(menuHello_World->menuAction());
+        menuBar = new QMenuBar(MainWindow);
+        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 800, 17));
+        MainWindow->setMenuBar(menuBar);
 
         retranslateUi(MainWindow);
 
@@ -65,7 +65,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        menuHello_World->setTitle(QCoreApplication::translate("MainWindow", "Hello World", nullptr));
+        plainTextEdit->setPlainText(QCoreApplication::translate("MainWindow", "Hello BroNote", nullptr));
     } // retranslateUi
 
 };

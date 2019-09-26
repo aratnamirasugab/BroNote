@@ -17,16 +17,25 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>30</y>
+      <x>0</x>
+      <y>0</y>
       <width>160</width>
       <height>80</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout"/>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="plainText">
+        <string>Hello BroNote</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -35,14 +44,7 @@
      <height>17</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuHello_World">
-    <property name="title">
-     <string>Hello World</string>
-    </property>
-   </widget>
-   <addaction name="menuHello_World"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
