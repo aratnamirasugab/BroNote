@@ -13,8 +13,8 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -26,7 +26,8 @@ public:
     QWidget *centralwidget;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
-    QPlainTextEdit *plainTextEdit;
+    QVBoxLayout *verticalLayout_2;
+    QTextEdit *textEdit;
     QStatusBar *statusbar;
     QMenuBar *menuBar;
 
@@ -43,10 +44,15 @@ public:
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        plainTextEdit = new QPlainTextEdit(verticalLayoutWidget);
-        plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        textEdit = new QTextEdit(verticalLayoutWidget);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
 
-        verticalLayout->addWidget(plainTextEdit);
+        verticalLayout_2->addWidget(textEdit);
+
+
+        verticalLayout->addLayout(verticalLayout_2);
 
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
@@ -65,7 +71,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        plainTextEdit->setPlainText(QCoreApplication::translate("MainWindow", "Hello BroNote", nullptr));
     } // retranslateUi
 
 };
