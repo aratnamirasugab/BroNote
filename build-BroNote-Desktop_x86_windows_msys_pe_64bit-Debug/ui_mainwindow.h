@@ -10,8 +10,10 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
@@ -23,6 +25,16 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionNew;
+    QAction *actionOpen;
+    QAction *actionSave_As;
+    QAction *actionPrint;
+    QAction *actionExit;
+    QAction *actionCopy;
+    QAction *actionPaste;
+    QAction *actionCut;
+    QAction *actionUndo;
+    QAction *actionRedo;
     QWidget *centralwidget;
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
@@ -30,12 +42,37 @@ public:
     QTextEdit *textEdit;
     QStatusBar *statusbar;
     QMenuBar *menuBar;
+    QMenu *menuFile;
+    QMenu *menuEdit;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(800, 600);
+        actionNew = new QAction(MainWindow);
+        actionNew->setObjectName(QString::fromUtf8("actionNew"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/imgs/assets/Icons/New.bmp"), QSize(), QIcon::Normal, QIcon::Off);
+        actionNew->setIcon(icon);
+        actionOpen = new QAction(MainWindow);
+        actionOpen->setObjectName(QString::fromUtf8("actionOpen"));
+        actionSave_As = new QAction(MainWindow);
+        actionSave_As->setObjectName(QString::fromUtf8("actionSave_As"));
+        actionPrint = new QAction(MainWindow);
+        actionPrint->setObjectName(QString::fromUtf8("actionPrint"));
+        actionExit = new QAction(MainWindow);
+        actionExit->setObjectName(QString::fromUtf8("actionExit"));
+        actionCopy = new QAction(MainWindow);
+        actionCopy->setObjectName(QString::fromUtf8("actionCopy"));
+        actionPaste = new QAction(MainWindow);
+        actionPaste->setObjectName(QString::fromUtf8("actionPaste"));
+        actionCut = new QAction(MainWindow);
+        actionCut->setObjectName(QString::fromUtf8("actionCut"));
+        actionUndo = new QAction(MainWindow);
+        actionUndo->setObjectName(QString::fromUtf8("actionUndo"));
+        actionRedo = new QAction(MainWindow);
+        actionRedo->setObjectName(QString::fromUtf8("actionRedo"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayoutWidget = new QWidget(centralwidget);
@@ -61,7 +98,24 @@ public:
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 800, 17));
+        menuFile = new QMenu(menuBar);
+        menuFile->setObjectName(QString::fromUtf8("menuFile"));
+        menuEdit = new QMenu(menuBar);
+        menuEdit->setObjectName(QString::fromUtf8("menuEdit"));
         MainWindow->setMenuBar(menuBar);
+
+        menuBar->addAction(menuFile->menuAction());
+        menuBar->addAction(menuEdit->menuAction());
+        menuFile->addAction(actionNew);
+        menuFile->addAction(actionOpen);
+        menuFile->addAction(actionSave_As);
+        menuFile->addAction(actionPrint);
+        menuFile->addAction(actionExit);
+        menuEdit->addAction(actionCopy);
+        menuEdit->addAction(actionPaste);
+        menuEdit->addAction(actionCut);
+        menuEdit->addAction(actionUndo);
+        menuEdit->addAction(actionRedo);
 
         retranslateUi(MainWindow);
 
@@ -71,6 +125,18 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        actionNew->setText(QCoreApplication::translate("MainWindow", "New", nullptr));
+        actionOpen->setText(QCoreApplication::translate("MainWindow", "Open", nullptr));
+        actionSave_As->setText(QCoreApplication::translate("MainWindow", "Save As", nullptr));
+        actionPrint->setText(QCoreApplication::translate("MainWindow", "Print", nullptr));
+        actionExit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+        actionCopy->setText(QCoreApplication::translate("MainWindow", "Copy", nullptr));
+        actionPaste->setText(QCoreApplication::translate("MainWindow", "Paste", nullptr));
+        actionCut->setText(QCoreApplication::translate("MainWindow", "Cut", nullptr));
+        actionUndo->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
+        actionRedo->setText(QCoreApplication::translate("MainWindow", "Redo", nullptr));
+        menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
+        menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
     } // retranslateUi
 
 };
