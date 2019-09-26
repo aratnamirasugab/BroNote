@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //added textedit function
+    this->setCentralWidget(ui->textEdit);
 }
 
 MainWindow::~MainWindow()
