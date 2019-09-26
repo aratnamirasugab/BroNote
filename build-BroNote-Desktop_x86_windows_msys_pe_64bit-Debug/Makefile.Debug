@@ -229,13 +229,6 @@ debug/moc_mainwindow.cpp: ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qicon.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/QFile \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QFileDialog \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qfiledialog.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/qdir.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdialog.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/QTextStream \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/QPrinter \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qprinter.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qtprintsupportglobal.h \
@@ -243,6 +236,15 @@ debug/moc_mainwindow.cpp: ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagedpaintdevice.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagelayout.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagesize.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/QFile \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QFileDialog \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/qdir.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdialog.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QMessageBox \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/QPrintDialog \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qprintdialog.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qabstractprintdialog.h \
@@ -380,13 +382,6 @@ debug/main.o: ../main.cpp ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qicon.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/QFile \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QFileDialog \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qfiledialog.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/qdir.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdialog.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/QTextStream \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/QPrinter \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qprinter.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qtprintsupportglobal.h \
@@ -394,6 +389,15 @@ debug/main.o: ../main.cpp ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagedpaintdevice.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagelayout.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagesize.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/QFile \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QFileDialog \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/qdir.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdialog.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QMessageBox \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/QPrintDialog \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qprintdialog.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qabstractprintdialog.h \
@@ -513,13 +517,6 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qicon.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/QFile \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QFileDialog \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qfiledialog.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/qdir.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdialog.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtCore/QTextStream \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/QPrinter \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qprinter.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qtprintsupportglobal.h \
@@ -527,11 +524,23 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagedpaintdevice.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagelayout.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qpagesize.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/QFile \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QFileDialog \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/qdir.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/qfileinfo.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdialog.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtCore/QTextStream \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QMessageBox \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/QPrintDialog \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qprintdialog.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtPrintSupport/qabstractprintdialog.h \
 		ui_mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtCore/QVariant \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QAction \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qaction.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QApplication \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qapplication.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtCore/qcoreapplication.h \
@@ -539,11 +548,10 @@ debug/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qguiapplication.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtGui/qinputmethod.h \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QMenu \
+		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qmenu.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QMenuBar \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qmenubar.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qmenu.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qaction.h \
-		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QStatusBar \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/5.13.1/mingw73_64/include/QtWidgets/QTextEdit \
